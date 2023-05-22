@@ -6,18 +6,18 @@ using: Java 17, Spring Boot 3, flyway, h2 database, Swagger
 <table>
   <tr>
     <td>
-      <a href=".github/img/componentDiagram.png">
-        <button>Service component diagram</button>
+      :chart_with_upwards_trend: <a href=".github/img/componentDiagram.png">
+        Service component diagram
       </a>
     </td>
     <td>
-      <a href=".github/img/flowDiagram.png">
-        <button>Flow diagram</button>
+      :chart_with_upwards_trend: <a href=".github/img/flowDiagram.png">
+        Flow diagram
       </a>
     </td>
     <td>
-      <a href=".github/img/sequenceDiagram.png">
-        <button>Sequence diagram</button>
+      :chart_with_upwards_trend: <a href=".github/img/sequenceDiagram.png">
+       Sequence diagram
       </a>
     </td>
   </tr>
