@@ -6,7 +6,7 @@ using: Java 17, Spring Boot 3, flyway, h2 database, Swagger
 <table>
   <tr>
     <td>
-      <a href=".github/img/classDiagram.png">
+      <a href=".github/img/componentDiagram.png">
         <button>Service component diagram</button>
       </a>
     </td>
