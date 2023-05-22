@@ -1,8 +1,8 @@
 # cash-flow-service
-Proof of concept of a cash flow service 
-
-using: Java 17, Spring Boot 3, flyway, h2 database, Swagger
-
+Cash Flow Service is a proof of concept service that allows users to 
+manage their financial transactions and view a daily summary of their revenues and expenses. 
+The service is built in Java 17 and Spring Boot 3, and uses Flyway to manage database 
+migrations and H2 to store data. Swagger is used to document the service's API.
 <table>
   <tr>
     <td>
