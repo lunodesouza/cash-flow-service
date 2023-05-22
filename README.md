@@ -1,17 +1,20 @@
 # cash-flow-service
 Proof of concept of a cash flow service
 
-## How build it
+## Build & Run with Docker
 ```bash
-.\mvnw install
+./mvnw install
 ```
-
-## How run it
 ```bash
 docker build -t cashflow-service .
 ```
 ```bash
 docker run -dp 8080:8080 -it cashflow-service
+```
+
+## Build & Run without Docker
+```bash
+./mvnw spring-boot:run
 ```
 
 ## How use it
