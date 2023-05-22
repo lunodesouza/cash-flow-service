@@ -31,6 +31,10 @@ public class TransactionRepositoryImpl implements TransactionRepositoryCustom {
             return Optional.ofNullable(query.getResultList())
                     .filter(list -> !list.isEmpty())
                     .orElseThrow(() -> new TransactionNotFoundException("Transaction Not Found."));
+
+        } catch(TransactionNotFoundException te){
+            log.error(te.getMessage());
+            throw new TransactionNotFoundException("Error in Transaction: "+ te.getMessage());
         } catch(Exception e) {
             log.error("Error in Transaction: {}", e.getMessage());
             throw new TransactionBadRequestException("Error in Transaction: "+ e.getMessage());
