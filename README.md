@@ -3,6 +3,26 @@ Proof of concept of a cash flow service
 
 using: Java 17, Spring Boot 3, flyway, h2 database, Swagger
 
+<table>
+  <tr>
+    <td>
+      <a href=".github/img/classDiagram.png">
+        <button>Service component diagram</button>
+      </a>
+    </td>
+    <td>
+      <a href=".github/img/flowDiagram.png">
+        <button>Flow diagram</button>
+      </a>
+    </td>
+    <td>
+      <a href=".github/img/sequenceDiagram.png">
+        <button>Sequence diagram</button>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Build & Run with Docker
 ```bash
 ./mvnw install
