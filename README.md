@@ -1,5 +1,7 @@
 # cash-flow-service
-Proof of concept of a cash flow service
+Proof of concept of a cash flow service 
+
+using: Java 17, Spring Boot 3, flyway, h2 database, Swagger
 
 ## Build & Run with Docker
 ```bash
