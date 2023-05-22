@@ -42,6 +42,6 @@ public class CashFlowController {
     })
     @PostMapping("/transactions")
     public ResponseEntity<Transaction> saveTransaction(@RequestBody Transaction transaction) {
-        return ResponseEntity.ok(cashFlowService.saveTransacition(transaction));
+        return ResponseEntity.ok(cashFlowService.saveTransaction(transaction));
     }
 }

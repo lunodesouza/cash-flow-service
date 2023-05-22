@@ -2,7 +2,6 @@ package com.github.lunodesouza.service;
 
 import com.github.lunodesouza.dto.DailySummaryReport;
 import com.github.lunodesouza.domain.Transaction;
-import com.github.lunodesouza.exception.TransactionBadRequestException;
 import com.github.lunodesouza.exception.TransactionNotFoundException;
 import com.github.lunodesouza.repository.TransactionRepository;
 import com.github.lunodesouza.repository.TransactionRepositoryCustom;
@@ -26,7 +25,7 @@ public class CashFlowService {
         return transactionRepositoryCustom.getDailySummaryReport();
     }
 
-    public Transaction saveTransacition(Transaction transaction){
+    public Transaction saveTransaction(Transaction transaction){
         try{
             if(nonNull(transaction)){
                 transactionRepository.save(transaction);
@@ -35,7 +34,6 @@ public class CashFlowService {
             }
         } catch(Exception e){
             log.error("saveTransacition fail: {}", e.getMessage());
-            throw new TransactionBadRequestException("Error in Transaction: "+ e.getMessage());
         }
         return transaction;
     }
