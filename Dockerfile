@@ -1,4 +1,4 @@
-FROM amazoncorretto:17.0.7
+FROM amazoncorretto:17.0.15
 
 COPY target/*.jar /opt/app.jar
 
